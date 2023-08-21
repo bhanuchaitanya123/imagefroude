@@ -1,0 +1,44 @@
+<html>
+<body>
+<form id="k" action="#" method="post">
+<p><input id="jk" type="file" name="filee" /></p>
+<p>plz enter full file name with (\\) </p>
+<p><input type="text" name="nam" id="enter" /></p>
+
+<p> &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="submit" /></p>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
+<script>
+ $(document).ready(function(){
+   $('input[type="file"]').change(function(e){
+     const geek=e.target.files[0].name;
+     $('#enter').val(geek);
+   });
+ });
+
+</script>
+<style>
+body{
+background-image:url("C:/Users/munab/Downloads/pexels-eberhard-grossgasteiger-1287145.jpg");
+background-size:cover;
+background-position:center;
+}
+#k{
+position:absolute;
+top:370px;
+left:685px;
+background-color:red;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,.4);
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+padding:3px;
+color:silver;
+align:center;
+}
+</style>
+
+</body>
+</html>
