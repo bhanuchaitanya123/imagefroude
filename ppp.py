@@ -20,7 +20,7 @@ def home():
            return redirect(url_for("admin_login"))
 
     else:
-        return render_template("img_in.html")
+        return render_template("index.html")
 @app.route("/home/login",methods=["POST","GET"])
 def login():
     if request.method=="POST":
